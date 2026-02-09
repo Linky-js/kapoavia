@@ -1,0 +1,19 @@
+{
+  "name": "KapoAvia",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^6.1.10",
+    "nuxt": "^4.3.0",
+    "swiper": "^12.1.0",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  }
+}
