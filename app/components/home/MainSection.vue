@@ -1,5 +1,6 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
+
 const mainTypes = [
   'Техническое обслуживание и ремонт авиационной техники',
   'Проведение работ по установлению <br> и продлению ресурсов (сроков службы)',
@@ -16,13 +17,13 @@ const mainTypes = [
       delay: 3000,
       disableOnInteraction: false
     }" :speed="1200" :pagination="{
-    clickable: true
-  }" :navigation="true" :modules="modules" class="mySwiper">
+      clickable: true
+    }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="'/images/home/1.png'" alt="slide" preset="default" />
       </SwiperSlide>
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="'/images/home/1.png'" alt="slide" preset="default" />
       </SwiperSlide>
     </Swiper>
 
@@ -31,7 +32,6 @@ const mainTypes = [
         <h1 class="Main__title">Техническое обслуживание <br> и ремонт авиационной техники</h1>
         <p class="Main__text">Акционерное общество «КАПО Авиа» — предприятие, специализирующееся<br>на техническом
           обслуживании и ремонте авиационной техники</p>
-       
       </div>
       <div class="Main_types">
         <div class="main_types_head">
@@ -167,7 +167,7 @@ const mainTypes = [
 
 @media screen and (max-width: 768px) {
   .Main {
-    padding-top: 100px;
+    padding-top: 150px;
     height: auto;
     padding-bottom: 50px;
   }

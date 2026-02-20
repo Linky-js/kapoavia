@@ -18,7 +18,7 @@ onMounted(() => {
     Header.value.classList.add('active');
   } else {
     window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+    onScroll();
   }
 });
 
@@ -57,6 +57,19 @@ onBeforeUnmount(() => {
             </li>
             <li class="Header__item">
               <NuxtLink class="links__item" to="/base">Производственная база</NuxtLink>
+            </li>
+
+            <li class="mobile">
+              <NuxtLink to="/about" class="links__item">Общая информация</NuxtLink>
+            </li>
+            <li class="mobile">
+              <NuxtLink to="/personnel" class="links__item">Кадры и социальная политика</NuxtLink>
+            </li>
+            <li class="mobile">
+              <NuxtLink to="/license" class="links__item">Сертификаты и лицензии</NuxtLink>
+            </li>
+            <li class="mobile">
+              <NuxtLink to="/contacts" class="links__item">Контакты</NuxtLink>
             </li>
           </ul>
           <div class="Header__buttons mobile" v-if="isMobile">
@@ -104,10 +117,12 @@ onBeforeUnmount(() => {
   z-index: 100;
   transition: all 0.3s ease;
 }
+
 .logo svg {
   width: 100rem;
   height: auto;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -171,15 +186,17 @@ onBeforeUnmount(() => {
     width: 31px;
     height: 20px;
   }
+
   .logo svg {
-  width: 80px;
-  height: auto;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    width: 80px;
+    height: auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
   .burger .line {
     stroke: #fff;

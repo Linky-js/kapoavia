@@ -10,6 +10,13 @@ import QualitySection from '~/components/home/QualitySection.vue';
 import LicenseSection from '~/components/home/LicenseSection.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Техническое обслуживание и ремонт авиационной техники — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'КАПО Авиа — техническое обслуживание и ремонт авиационной техники: Ил-62М, Ил-76, Ан-26, Ту-214 и др.' }
+  ]
+})
+
 const licenseItems = [
   {
     image: "/images/license/1.png",

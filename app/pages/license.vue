@@ -8,6 +8,13 @@ import ManagmentSection from '~/components/license/ManagmentSection.vue';
 import InfoDocSection from '~/components/license/InfoDocSection.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Сертификаты и лицензии — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Сертификаты, лицензии и разрешительные документы АО «КАПО Авиа», подтверждающие квалификацию и допуски.' }
+  ]
+})
+
 const items = [
   'Техническое обслуживание авиационной техники',
   'Ремонт авиационной техники и авиационных агрегатов',

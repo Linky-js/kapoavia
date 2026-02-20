@@ -23,12 +23,12 @@ const props = defineProps({
               АО «КАПО Авиа» располагает производственной базой, включающей:
             </p>
           </div>
-         
+
         </div>
         <div class="production__items">
           <div class="production__item" v-for="(item, index) in production" :key="index">
             <div class="production__image">
-              <img :src="item.image" alt="production">
+              <NuxtImg format="auto" :src="item.image" alt="production" />
             </div>
             <div class="production__item-info">
               <h3 class="head-h3">{{ item.title }}</h3>
@@ -45,10 +45,11 @@ const props = defineProps({
   </section>
 </template>
 <style scoped>
-.production{
+.production {
   padding: 130rem 0;
   background-color: #fff;
 }
+
 .production__content {
   display: flex;
   flex-direction: column;
@@ -119,10 +120,12 @@ const props = defineProps({
   line-height: 130%;
   color: rgba(38, 45, 63, 0.7);
 }
+
 @media screen and (max-width: 768px) {
-  .production{
+  .production {
     padding: 80px 0;
   }
+
   .production__content {
     gap: 30px;
   }
@@ -132,6 +135,7 @@ const props = defineProps({
     align-items: flex-start;
     gap: 20px;
   }
+
   .production__head {
     gap: 20px;
   }
@@ -155,9 +159,11 @@ const props = defineProps({
     padding: 20px;
     gap: 30px;
   }
+
   .head-h3 {
     font-size: 20px;
   }
+
   .production__list {
     padding-left: 15px;
   }

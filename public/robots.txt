@@ -1,2 +1,7 @@
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://капо-авиа.рф/sitemap.xml
 User-Agent: *
 Disallow:

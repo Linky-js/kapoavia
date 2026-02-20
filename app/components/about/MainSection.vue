@@ -1,6 +1,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import breadcrumbs from "../breadcrumbs.vue";
+import mainImg from '/images/home/1.png'
 </script>
 <template>
   <section class="Main">
@@ -11,10 +12,10 @@ import breadcrumbs from "../breadcrumbs.vue";
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
     </Swiper>
     <div class="container">
@@ -24,7 +25,8 @@ import breadcrumbs from "../breadcrumbs.vue";
 
         <h1 class="Main__title">Общая информация</h1>
         <p class="Main__text">
-          Акционерное общество «КАПО Авиа» (АО «КАПО Авиа») организация, специализирующаяся по техническому обслуживанио и ремонту авиационной техники. <br><br>
+          Акционерное общество «КАПО Авиа» (АО «КАПО Авиа») организация, специализирующаяся по техническому обслуживанио
+          и ремонту авиационной техники. <br><br>
           Приоритетными направленнями чейтельности АО «КАПО Авиа» Оба»
           высоким требованиям эффективности, качества и безопасности являются:<br>
           - техническое обслуживание и ремонт авиационной техники;<br>
@@ -34,7 +36,8 @@ import breadcrumbs from "../breadcrumbs.vue";
           - разработка конструкторской и ремонтной документации;<br>
           - капитальный, средний и текущий ремонт авиационной техники;<br>
           - подготовка и проведение летных испытаний;<br>
-          - летные испыания авиационной техники, подготовка к летным испытаниям, подготовка и освидетельствование летного и технического состава;<br>
+          - летные испыания авиационной техники, подготовка к летным испытаниям, подготовка и освидетельствование
+          летного и технического состава;<br>
           - проведение рекламационных работ.
         </p>
       </div>

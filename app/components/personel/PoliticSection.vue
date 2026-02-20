@@ -39,7 +39,7 @@ const production = [
               {{ item.text }}
             </div>
             <div v-if="item.image" class="production__image">
-              <img :src="item.image" alt="production">
+              <NuxtImg format="auto" :src="item.image" alt="production" />
             </div>
           </div>
         </div>

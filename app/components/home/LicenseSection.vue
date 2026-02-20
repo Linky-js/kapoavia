@@ -34,7 +34,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section class="license block">
-    <img src="/images/bgLicense.png" alt="" class="background">
+    <NuxtImg format="auto" src="/images/bgLicense.png" alt="" class="background" />
     <div class="container">
       <div class="license__content">
         <div class="labelSection">
@@ -60,8 +60,8 @@ onBeforeUnmount(() => {
           delay: 3000,
           disableOnInteraction: false
         }" :speed="600" :pagination="{
-          clickable: true
-        }" :navigation="true" :breakpoints="{
+            clickable: true
+          }" :navigation="true" :breakpoints="{
           '768': {
             slidesPerView: 4,
             spaceBetween: 20,
@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
           <SwiperSlide v-for="(item, index) in props.license" :key="index">
             <div class="license__item">
               <a :href="item.image" data-fancybox="licenses" :data-caption="item.title" class="license_image">
-                <img :src="item.image" :alt="item.title" />
+                <NuxtImg format="auto" :src="item.image" :alt="item.title" />
               </a>
               <p class="description">{{ item.title }}</p>
             </div>
@@ -178,9 +178,11 @@ onBeforeUnmount(() => {
     text-align: center;
     font-size: 16px;
   }
-  .license__items{
+
+  .license__items {
     margin-top: 10px;
   }
+
   .license__item {
     width: 100%;
     gap: 20px;
@@ -190,6 +192,7 @@ onBeforeUnmount(() => {
   .license_image {
     height: auto;
   }
+
   .description {
     font-size: 12px;
   }

@@ -16,7 +16,7 @@ const props = defineProps({
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Slides_slide" v-for="(slide, index) in slides" :key="index">
-        <img :src="slide" alt="slide">
+        <NuxtImg format="auto" :src="slide" alt="slide" />
       </SwiperSlide>
     </Swiper>
   </div>
@@ -27,17 +27,19 @@ const props = defineProps({
   height: 490rem;
   margin-right: 16rem;
 }
+
 .Slides_slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 @media screen and (max-width: 768px) {
   .Slides_slide {
     width: 300px;
     height: 200px;
     margin-right: 8px;
   }
-  
+
 }
 </style>

@@ -111,14 +111,15 @@ const contactsGroup = [
         </div>
         <div class="production__info">
           <div class="production__head">
-            <h2 class="head-h2">Контакты</h2>
+            <h1 class="Main__title">Контакты</h1>
           </div>
         </div>
         <div v-for="cg in contactsGroup" class="contact__group">
           <div class="head-h3">{{ cg.label }}</div>
 
           <div class="production__items">
-            <div class="production__item" v-for="(item, index) in cg.items" :key="index" :class="{w100: item.label === 'Адрес'}">
+            <div class="production__item" v-for="(item, index) in cg.items" :key="index"
+              :class="{ w100: item.label === 'Адрес' }">
               <div class="label">{{ item.label }}</div>
 
               <div class="link-wrapper">
@@ -160,6 +161,7 @@ const contactsGroup = [
     opacity: 1;
   }
 }
+
 .production__content {
   display: flex;
   flex-direction: column;
@@ -201,6 +203,7 @@ const contactsGroup = [
   width: 100%;
   height: 500rem;
 }
+
 .w100 .link-wrapper {
   width: 100%;
   height: 100%;

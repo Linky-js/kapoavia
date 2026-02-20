@@ -31,7 +31,9 @@ const { isMobile } = useDeviceType();
 
         <ul class="vessels__items desktop" v-if="!isMobile">
           <li class="vessels__item" v-for="(item, index) in vessels" :key="index">
-            <div class="vessels__image"> <img :src="item.image" :alt="item.name"></div>
+            <div class="vessels__image">
+              <NuxtImg format="auto" :src="item.image" :alt="item.name" preset="default" />
+            </div>
             <span>{{ item.name }}</span>
           </li>
         </ul>
@@ -43,7 +45,7 @@ const { isMobile } = useDeviceType();
         }" :navigation="true" :modules="modules" class="mySwiper mobile">
           <SwiperSlide class="Slides_slide" v-for="(slide, index) in vessels" :key="index">
             <div class="vessels__image">
-              <img :src="slide.image" alt="slide">
+              <NuxtImg format="auto" :src="slide.image" alt="slide" preset="default" />
             </div>
             <span>{{ slide.name }}</span>
           </SwiperSlide>

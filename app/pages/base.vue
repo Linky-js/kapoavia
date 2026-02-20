@@ -8,6 +8,13 @@ import AdditionalWork from '~/components/AdditionalWork.vue';
 import ParkingSection from '~/components/base/ParkingSection.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Производственная база и инфраструктура — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Производственная база АО «КАПО Авиа»: цеха, лаборатории, участки технического обслуживания и ремонта.' }
+  ]
+})
+
 const productionItems = [
   {
     image: "/images/production/1.png",
@@ -45,11 +52,11 @@ const items = [
     <BaseSection />
     <QualitySection />
     <ProductionSection :production="productionItems" />
-    <AdditionalWork :title="'Подготовка производства'" :description="'В рамках подготовки производства и обеспечения технического обслуживания используются следующие объекты инфраструктуры:'" :items="items" :dopInfoBoolean="false"  />
+    <AdditionalWork :title="'Подготовка производства'"
+      :description="'В рамках подготовки производства и обеспечения технического обслуживания используются следующие объекты инфраструктуры:'"
+      :items="items" :dopInfoBoolean="false" />
     <ParkingSection />
     <Footer />
   </div>
 </template>
-<style scoped>
- 
-</style>
+<style scoped></style>

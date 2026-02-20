@@ -88,7 +88,9 @@ onMounted(() => {
               disableOnInteraction: false
             }" :speed="1000" :navigation="true" :modules="modules">
               <swiper-slide class="Slides_slide" v-for="(slide, index) in slides" :key="index">
-                <a :href="slide" data-fancybox="gallery"><img :src="slide" alt="slide"></a>
+                <a :href="slide" data-fancybox="gallery">
+                  <NuxtImg format="auto" :src="slide" alt="slide" preset="default" />
+                </a>
               </swiper-slide>
             </swiper>
           </ClientOnly>
@@ -102,7 +104,9 @@ onMounted(() => {
               disableOnInteraction: false
             }" :speed="1000" :navigation="true" :modules="modules" class="labs_mySwiper">
               <SwiperSlide class="labs_slide" v-for="(slide, index) in slides" :key="index">
-                <a :href="slide" data-fancybox="gallery2"><img :src="slide" alt="slide"></a>
+                <a :href="slide" data-fancybox="gallery2">
+                  <NuxtImg format="auto" :src="slide" alt="slide" preset="default" />
+                </a>
               </SwiperSlide>
             </Swiper>
           </ClientOnly>
@@ -232,6 +236,7 @@ onMounted(() => {
     height: 300px;
     width: 100%;
   }
+
   .Slides_slide img {
     width: 100%;
     height: 100%;

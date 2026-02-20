@@ -17,7 +17,7 @@
           </p>
         </div>
         <div class="Parking__image">
-          <img src="/images/parking.png" alt="Parking">
+          <NuxtImg format="auto" src="/images/parking.png" alt="Parking" preset="default" />
         </div>
       </div>
     </div>
@@ -53,15 +53,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Parking__content{
+  .Parking__content {
     padding-bottom: 50px;
     gap: 30px;
     flex-direction: column;
   }
-  .Parking__info{
+
+  .Parking__info {
     gap: 30px;
   }
-  .Parking__image{
+
+  .Parking__image {
     width: 100%;
     height: 300px;
   }

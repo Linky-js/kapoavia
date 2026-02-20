@@ -14,10 +14,12 @@
           </div>
           <div class="head-h2">Использование разрешительной документации</div>
 
-          <div class="description mtAuto">Сертификаты, лицензии и разрешительные документы используются при выполнении работ по техническому обслуживанию и ремонту авиационной техники, а также при взаимодействии с заказчиками и контролирующими организациями.</div>
+          <div class="description mtAuto">Сертификаты, лицензии и разрешительные документы используются при выполнении
+            работ по техническому обслуживанию и ремонту авиационной техники, а также при взаимодействии с заказчиками и
+            контролирующими организациями.</div>
         </div>
         <div class="slider">
-          <img src="/images/license/5.png" alt="">
+          <NuxtImg format="auto" src="/images/license/5.png" alt="" />
         </div>
       </div>
     </div>
@@ -27,9 +29,11 @@
 .Base {
   padding: 130rem 0;
 }
+
 .description {
   font-size: 18rem;
 }
+
 .Base_content {
   display: flex;
   justify-content: space-between;
@@ -122,6 +126,7 @@
   .Base {
     padding: 80px 0;
   }
+
   .description {
     font-size: 14px;
   }

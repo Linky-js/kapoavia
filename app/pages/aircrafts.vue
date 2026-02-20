@@ -5,6 +5,13 @@ import VesselsSection from '~/components/aircrafts/VesselsSection.vue';
 import AdditionalWork from '~/components/AdditionalWork.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Обслуживаемые типы воздушных судов — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Перечень обслуживаемых типов воздушных судов: Ил-62М, Ил-76, Ан-26, Ту-214, Ту-204 и другие.' }
+  ]
+})
+
 const vessels = [
   { name: "Ил-62М (МГр)", image: "/images/vessels/1.png" },
   { name: "Ил-76ТД (МД)", image: "/images/vessels/2.png" },
@@ -28,10 +35,11 @@ const items = [
     <Header />
     <MainSection />
     <VesselsSection :vessels="vessels" :dopInfo="false" />
-    <AdditionalWork :title="'Дополнительные виды работ'" :description="'В рамках основной деятельности АО «КАПО Авиа» также выполняются следующие виды работ:'" :items="items" :dopInfo="'Перечень выполняемых работ определяется действующими допусками, эксплуатационной и конструкторской документацией, а также программами технического обслуживания'" />
+    <AdditionalWork :title="'Дополнительные виды работ'"
+      :description="'В рамках основной деятельности АО «КАПО Авиа» также выполняются следующие виды работ:'"
+      :items="items"
+      :dopInfo="'Перечень выполняемых работ определяется действующими допусками, эксплуатационной и конструкторской документацией, а также программами технического обслуживания'" />
     <Footer />
   </div>
 </template>
-<style scoped>
- 
-</style>
+<style scoped></style>

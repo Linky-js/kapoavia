@@ -7,6 +7,13 @@ import ControlSystemSection from '~/components/home/ControlSystemSection.vue';
 import AdditionalWork from '~/components/AdditionalWork.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Общая информация — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Общая информация об АО «КАПО Авиа»: история, производственная база, компетенции и контакты.' }
+  ]
+})
+
 const licenseItems = [
   {
     image: "/images/license/1.png",

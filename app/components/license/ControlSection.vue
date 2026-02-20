@@ -7,7 +7,7 @@
       <div class="Base_content">
 
         <div class="slider">
-          <img src="/images/license/4.png" alt="">
+          <NuxtImg format="auto" src="/images/license/4.png" alt="" />
         </div>
         <div class="base__info">
           <div class="labelSection">
@@ -33,9 +33,11 @@
   background-color: #fff;
   padding: 130rem 0;
 }
+
 .description {
   font-size: 18rem;
 }
+
 .Base_content {
   display: flex;
   justify-content: space-between;
@@ -128,6 +130,7 @@
   .Base {
     padding: 80px 0;
   }
+
   .description {
     font-size: 14px;
   }

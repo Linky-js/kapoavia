@@ -1,6 +1,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import breadcrumbs from "../breadcrumbs.vue";
+import mainImg from '/images/home/1.png'
 </script>
 <template>
   <section class="Main">
@@ -11,10 +12,10 @@ import breadcrumbs from "../breadcrumbs.vue";
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
       <SwiperSlide class="Main_slide">
-        <img src="~/assets/img/1.png" alt="slide">
+        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
     </Swiper>
     <div class="container">

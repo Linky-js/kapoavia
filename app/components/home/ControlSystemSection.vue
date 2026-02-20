@@ -31,7 +31,7 @@ const props = defineProps({
         }" :modules="modules" class="mySwiper">
           <SwiperSlide class="Slides_slide" v-for="(image, index) in props.images" :key="index">
             <div class="control-system__image">
-              <img :src="image" :alt="`slide ${index + 1}`">
+              <NuxtImg format="auto" :src="image" :alt="`slide ${index + 1}`" preset="default" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -40,7 +40,7 @@ const props = defineProps({
             на обеспечение соответствия выполняемых работ требованиям нормативной, эксплуатационной и ремонтной
             документации.
           </p>
-         
+
         </div>
       </div>
     </div>
@@ -90,23 +90,28 @@ const props = defineProps({
   line-height: 140%;
   color: #262d3f;
 }
+
 @media screen and (max-width: 768px) {
   .control-system__content {
     gap: 30px;
   }
+
   .mySwiper {
     margin-top: 30px;
   }
+
   .Slides_slide {
     margin-right: 0;
     height: 290px;
   }
+
   .control-system__dop-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     margin-top: 30px;
   }
+
   .control-system__dop-info p {
     max-width: 100%;
   }

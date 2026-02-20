@@ -4,7 +4,7 @@
     <div class="container">
       <div class="quality__content">
         <div class="quality__image">
-          <img src="/images/quality/1.png" alt="quality">
+          <NuxtImg format="auto" src="/images/quality/1.png" alt="quality" />
         </div>
         <div class="quality__head">
           <div class="labelSection">
@@ -82,33 +82,41 @@
   line-height: 140%;
   color: #262d3f;
 }
-.btn_blue{
+
+.btn_blue {
   margin-top: auto;
 }
+
 @media screen and (max-width: 768px) {
   .quality__content {
     flex-direction: column;
     gap: 30px;
   }
+
   .quality__image {
     width: 100%;
     height: auto;
     display: none;
   }
+
   .quality_dop-info {
     padding: 20px;
     gap: 20px;
     margin-top: 30px;
   }
+
   .quality__head {
     gap: 20px;
   }
+
   .quality_dop-info-title {
     font-size: 20px;
   }
+
   .quality_dop-info-list {
     padding-left: 20px;
   }
+
   .quality_dop-info-list li {
     font-size: 16px;
   }

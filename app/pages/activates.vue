@@ -5,6 +5,13 @@ import ActivitySection from '~/components/activates/ActivitySection.vue';
 import AdditionalWork from '~/components/AdditionalWork.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Виды деятельности — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Виды деятельности АО «КАПО Авиа»: техническое обслуживание, ремонт, испытания, диагностика и сопутствующие услуги.' }
+  ]
+})
+
 const items = [
   'Проведение работ по установлению и продлению ресурсов (сроков службы) авиационной техники',
   'Капитальный, средний и текущий ремонт авиационной техники',
@@ -23,10 +30,10 @@ const items = [
     <Header />
     <MainSection />
     <ActivitySection />
-    <AdditionalWork :title="'Дополнительные виды работ'" :description="'В рамках основной деятельности АО «КАПО Авиа» также выполняются следующие виды работ:'" :items="items" />
+    <AdditionalWork :title="'Дополнительные виды работ'"
+      :description="'В рамках основной деятельности АО «КАПО Авиа» также выполняются следующие виды работ:'"
+      :items="items" />
     <Footer />
   </div>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

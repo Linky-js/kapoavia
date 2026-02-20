@@ -8,6 +8,13 @@ import TermsSection from '~/components/personel/TermsSection.vue';
 import ContactsSection from '~/components/personel/ContactsSection.vue';
 import Footer from '~/components/Footer.vue';
 
+useHead({
+  title: 'Кадры и социальная политика — КАПО Авиа',
+  meta: [
+    { name: 'description', content: 'Информация о кадрах, специалистах и социальной политике АО «КАПО Авиа».' }
+  ]
+})
+
 const vessels = [
   { name: "Ил-62М (МГр)", image: "/images/vessels/1.png" },
   { name: "Ил-76ТД (МД)", image: "/images/vessels/2.png" },
@@ -30,6 +37,4 @@ const vessels = [
     <Footer />
   </div>
 </template>
-<style scoped>
- 
-</style>
+<style scoped></style>

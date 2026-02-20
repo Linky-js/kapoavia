@@ -13,14 +13,17 @@
             Кадры
           </div>
           <div class="head-h2">Молодые специалисты <br> и кадровый резерв</div>
-          <div class="description">В деятельности АО «КАПО Авиа» уделяется внимание формированию кадрового резерва и привлечению молодых специалистов.</div>
-         <div class="description mtAuto">Работа с молодыми специалистами направлена на их поэтапную профессиональную адаптацию, получение практических навыков и дальнейшее развитие в составе производственных подразделений предприятия.</div>
+          <div class="description">В деятельности АО «КАПО Авиа» уделяется внимание формированию кадрового резерва и
+            привлечению молодых специалистов.</div>
+          <div class="description mtAuto">Работа с молодыми специалистами направлена на их поэтапную профессиональную
+            адаптацию, получение практических навыков и дальнейшее развитие в составе производственных подразделений
+            предприятия.</div>
         </div>
         <div class="slider">
-          <img src="/images/personnel/1.png" alt="">
+          <NuxtImg format="auto" src="/images/personnel/1.png" alt="" />
         </div>
       </div>
-      
+
     </div>
   </section>
 </template>
@@ -42,7 +45,8 @@
   gap: 26rem;
   justify-content: space-between;
 }
-.mtAuto{
+
+.mtAuto {
   margin-top: auto;
 }
 
@@ -52,11 +56,12 @@
   height: 632rem;
 
 }
+
 .slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
 }
 
 .Slides_slide {
@@ -149,6 +154,7 @@
     height: 300px;
     width: 100%;
   }
+
   .Slides_slide img {
     width: 100%;
     height: 100%;
