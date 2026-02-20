@@ -282,8 +282,22 @@ body {
   align-items: center;
   gap: 6rem;
 }
+._dop-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20rem 20rem 20rem 40rem;
+  border: 1px solid rgba(38, 45, 63, 0.05);
+}
 
 @media screen and (max-width: 768px) {
+  ._dop-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+  }
   .logo {
     font-weight: 600;
     font-size: 24px;
@@ -396,7 +410,7 @@ body {
     width: max-content;
     gap: 6px;
   }
-  .copyrightLInk{
+  .copyrightLInk {
     font-size: 12px;
   }
 }

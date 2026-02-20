@@ -1,13 +1,13 @@
 <script setup>
 import Header from '~/components/Header.vue';
-import MainSection from '~/components/home/sections/MainSection.vue';
-import AboutSection from '~/components/home/sections/AboutSection.vue';
-import Slides from '~/components/home/sections/Slides.vue';
-import VesselsSection from '~/components/home/sections/VesselsSection.vue';
-import ProductionSection from '~/components/home/sections/ProductionSection.vue';
-import ControlSystemSection from '~/components/home/sections/ControlSystemSection.vue';
-import QualitySection from '~/components/home/sections/QualitySection.vue';
-import LicenseSection from '~/components/home/sections/LicenseSection.vue';
+import MainSection from '~/components/home/MainSection.vue';
+import AboutSection from '~/components/home/AboutSection.vue';
+import Slides from '~/components/home/Slides.vue';
+import VesselsSection from '~/components/home/VesselsSection.vue';
+import ProductionSection from '~/components/home/ProductionSection.vue';
+import ControlSystemSection from '~/components/home/ControlSystemSection.vue';
+import QualitySection from '~/components/home/QualitySection.vue';
+import LicenseSection from '~/components/home/LicenseSection.vue';
 import Footer from '~/components/Footer.vue';
 
 const licenseItems = [

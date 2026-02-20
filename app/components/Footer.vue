@@ -9,14 +9,14 @@
           </div>
           <div class="footer__items">
 
-            <a class="phone" href="tel:+79999999999">+7 999 999 99 99</a>
+            <a class="phone" href="tel:+7 (843) 518-36-30">+7 (843) 518-36-30</a>
             <div class="times">
               <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="3" cy="3" r="3" fill="#2469A6" />
               </svg>
-              ежедневно, 9:00-22:00
+              ПН-ПТ, 9:00-18:00
             </div>
-            <a class="links__item email" href="mailto:capoavia@gmail.com">capoavia@gmail.com</a>
+            <a class="links__item email" href="mailto:office@kapo-avia.ru">office@kapo-avia.ru</a>
 
           </div>
         </div>
@@ -25,15 +25,21 @@
             Юридический адрес
           </div>
           <div class="footer__items">
-            <p class="links__item">420111, Республика Татарстан,<br> г. Казань, ул. Декабристов, д. 2</p>
+            <p class="links__item">420127, Россия, РТ, г. Казань,<br> ул. Дементьева, д.70А, офис 213</p>
           </div>
         </div>
         <div class="footer__column">
           <div class="footer__label">
-            Фактический адрес
+            Меню
           </div>
           <div class="footer__items">
-            <p class="links__item">420111, Республика Татарстан,<br> г. Казань, ул. Декабристов, д. 2</p>
+            <NuxtLink to="/contacts" class="links__item">Контакты</NuxtLink>
+            <NuxtLink to="/about" class="links__item">Общая информация</NuxtLink>
+            <NuxtLink to="/personnel" class="links__item">Кадры и социальная политика</NuxtLink>
+            <NuxtLink to="/license" class="links__item">Сертификаты и лицензии</NuxtLink>
+            <NuxtLink to="/activates" class="links__item">Виды деятельности</NuxtLink>
+            <NuxtLink to="/aircrafts" class="links__item">Обслуживаемые воздушные суда</NuxtLink>
+            <NuxtLink to="/base" class="links__item">Производственная база</NuxtLink>
           </div>
         </div>
       </div>

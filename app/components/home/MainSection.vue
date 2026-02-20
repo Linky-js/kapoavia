@@ -12,39 +12,26 @@ const mainTypes = [
 </script>
 <template>
   <section class="Main">
-   <Swiper
-  :slides-per-view="1"
-  :space-between="0"
-  :loop="true"
-  :autoplay="{
-    delay: 3000,
-    disableOnInteraction: false
-  }"
-  :speed="1200"
-  :pagination="{
+    <Swiper :slides-per-view="1" :space-between="0" :loop="true" :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false
+    }" :speed="1200" :pagination="{
     clickable: true
-  }"
-  :navigation="true"
-  :modules="modules"
-  class="mySwiper"
->
-  <SwiperSlide class="Main_slide">
-    <img src="~/assets/img/1.png" alt="slide">
-  </SwiperSlide>
-  <SwiperSlide class="Main_slide">
-    <img src="~/assets/img/1.png" alt="slide">
-  </SwiperSlide>
-</Swiper>
+  }" :navigation="true" :modules="modules" class="mySwiper">
+      <SwiperSlide class="Main_slide">
+        <img src="~/assets/img/1.png" alt="slide">
+      </SwiperSlide>
+      <SwiperSlide class="Main_slide">
+        <img src="~/assets/img/1.png" alt="slide">
+      </SwiperSlide>
+    </Swiper>
 
     <div class="container">
       <div class="Main_info">
         <h1 class="Main__title">Техническое обслуживание <br> и ремонт авиационной техники</h1>
         <p class="Main__text">Акционерное общество «КАПО Авиа» — предприятие, специализирующееся<br>на техническом
           обслуживании и ремонте авиационной техники</p>
-        <div class="Main__buttons">
-          <NuxtLink class="btn_blue">Попробовать бесплатно</NuxtLink>
-          <NuxtLink class="btn_gray">Узнать больше</NuxtLink>
-        </div>
+       
       </div>
       <div class="Main_types">
         <div class="main_types_head">
@@ -67,7 +54,7 @@ const mainTypes = [
 .Main {
   position: relative;
   padding-top: 193rem;
-  height: 1036rem;
+  padding-bottom: 50rem;
 }
 
 .Main::after {
@@ -79,6 +66,9 @@ const mainTypes = [
   height: 100%;
   background: linear-gradient(180deg, rgba(21, 25, 37, 0.8) 0%, rgba(21, 25, 37, 0.9) 100%);
   z-index: 1;
+
+  background: linear-gradient(180deg, rgba(21, 25, 37, 0.39) 0%, rgba(21, 25, 37, 0.67) 100%);
+
 }
 
 .mySwiper {
@@ -174,33 +164,42 @@ const mainTypes = [
   flex-wrap: wrap;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .Main {
     padding-top: 100px;
     height: auto;
+    padding-bottom: 50px;
   }
-  .Main_info{
+
+  .Main_info {
     gap: 30px;
   }
-  .Main__title{
+
+  .Main__title {
     font-size: 32px;
   }
-  .Main__text{
+
+  .Main__text {
     font-size: 16px;
   }
-  .Main__buttons{
+
+  .Main__buttons {
     gap: 10px;
     flex-wrap: wrap;
   }
-  .Main_types{
+
+  .Main_types {
     gap: 10px;
     padding-top: 20px;
     margin-top: 50px;
   }
-  .main_types_head{
+
+  .main_types_head {
     font-size: 16px;
   }
-  .main_types_item{
+
+  .main_types_item {
     height: auto;
     padding: 15px;
     gap: 10px;
@@ -208,7 +207,8 @@ const mainTypes = [
     width: 100%;
     flex: 0 0 100%;
   }
-  .main_types_list{
+
+  .main_types_list {
     gap: 10px;
   }
 }

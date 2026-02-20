@@ -1,11 +1,13 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { useDeviceType } from '../useDeviceType';
 const props = defineProps({
   vessels: {
     type: Array,
     required: true
   }
 });
+const { isMobile } = useDeviceType();
 </script>
 <template>
   <section class="vessels-section block">
@@ -21,13 +23,14 @@ const props = defineProps({
         <p class="description">
           АО «КАПО Авиа» выполняет работы по техническому обслуживанию и ремонту следующих типов воздушных судов:
         </p>
-        <ul class="vessels__items desktop">
+
+        <ul class="vessels__items desktop" v-if="!isMobile">
           <li class="vessels__item" v-for="(item, index) in vessels" :key="index">
             <div class="vessels__image"> <img :src="item.image" :alt="item.name"></div>
             <span>{{ item.name }}</span>
           </li>
         </ul>
-        <Swiper :slides-per-view="1.2" :space-between="20" :loop="true" :autoplay="{
+        <Swiper v-if="isMobile" :slides-per-view="1.2" :space-between="20" :loop="true" :autoplay="{
           delay: 3000,
           disableOnInteraction: false
         }" :speed="600" :pagination="{
@@ -41,18 +44,11 @@ const props = defineProps({
           </SwiperSlide>
         </Swiper>
 
-        <div class="vessels_dop-info">
-          <div class="vessels_dop-info--text">
-            Работы выполняются в соответствии с действующими допусками <br> и эксплуатационной документацией
+        <div class="_dop-info">
+          <div class="_dop-info--text">
+            Работы выполняются в соответствии с действующими допусками и эксплуатационной документацией
           </div>
-          <NuxtLink to="/services" class="btn btn_blue">
-            Обслуживаемые типы воздушных судов
-            <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M30.5303 6.05328C30.8232 5.76039 30.8232 5.28551 30.5303 4.99262L25.7574 0.219648C25.4645 -0.073245 24.9896 -0.073245 24.6967 0.219648C24.4038 0.512542 24.4038 0.987415 24.6967 1.28031L28.9393 5.52295L24.6967 9.76559C24.4038 10.0585 24.4038 10.5334 24.6967 10.8263C24.9896 11.1191 25.4645 11.1191 25.7574 10.8263L30.5303 6.05328ZM0 5.52295V6.27295H30V5.52295V4.77295H0V5.52295Z"
-                fill="white" />
-            </svg>
-          </NuxtLink>
+
         </div>
       </div>
     </div>
@@ -97,7 +93,8 @@ const props = defineProps({
   line-height: 100%;
   color: #262d3f;
 }
-.vessels_dop-info{
+
+.vessels_dop-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,7 +136,8 @@ const props = defineProps({
     width: 100%;
     height: 250px;
   }
-  .vessels_dop-info{
+
+  .vessels_dop-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
