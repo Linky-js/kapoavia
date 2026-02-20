@@ -34,7 +34,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section class="license block">
-    <NuxtImg format="auto" src="/images/bgLicense.png" alt="" class="background" />
+    <NuxtImg src="/images/bgLicense.png" alt="" class="background" />
     <div class="container">
       <div class="license__content">
         <div class="labelSection">
@@ -60,17 +60,17 @@ onBeforeUnmount(() => {
           delay: 3000,
           disableOnInteraction: false
         }" :speed="600" :pagination="{
-            clickable: true
-          }" :navigation="true" :breakpoints="{
-          '768': {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          }
-        }" :modules="modules" class="license__items">
+          clickable: true
+        }" :navigation="true" :breakpoints="{
+            '768': {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            }
+          }" :modules="modules" class="license__items">
           <SwiperSlide v-for="(item, index) in props.license" :key="index">
             <div class="license__item">
               <a :href="item.image" data-fancybox="licenses" :data-caption="item.title" class="license_image">
-                <NuxtImg format="auto" :src="item.image" :alt="item.title" />
+                <NuxtImg :src="item.image" :alt="item.title" />
               </a>
               <p class="description">{{ item.title }}</p>
             </div>

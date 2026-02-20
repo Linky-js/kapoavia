@@ -41,32 +41,6 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    // Сервирует оптимизированные изображения локально через IPX
-    provider: 'ipx',
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-    },
-    presets: {
-      // дефолтный пресет: webp 75% качества
-      default: {
-        modifiers: {
-          format: 'webp',
-          quality: 75,
-        },
-      },
-      thumb: {
-        modifiers: {
-          width: 400,
-          height: 300,
-          fit: 'cover',
-          format: 'webp',
-          quality: 75,
-        },
-      },
-    },
-  },
+    provider: 'static'
+  }
 })

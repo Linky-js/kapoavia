@@ -42,7 +42,7 @@ const items = [
         <div class="activity__items desktop" v-if="!isMobile">
           <div v-for="item in items" :key="item.id" class="activity__item">
             <div class="activity__item_image">
-              <NuxtImg format="auto" :src="item.img" alt="" preset="default" />
+              <NuxtImg :src="item.img" alt="" preset="default" />
             </div>
             <div class="activity__item__head">
               {{ item.name }}
@@ -57,7 +57,7 @@ const items = [
         }" :navigation="true" :modules="modules" class="mySwiper mobile">
           <SwiperSlide v-for="item in items" :key="item.id" class="activity__item">
             <div class="activity__item_image">
-              <NuxtImg format="auto" :src="item.img" alt="" preset="default" />
+              <NuxtImg :src="item.img" alt="" preset="default" />
             </div>
             <div class="activity__item__head">
               {{ item.name }}

@@ -16,7 +16,7 @@ const props = defineProps({
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Slides_slide" v-for="(slide, index) in slides" :key="index">
-        <NuxtImg format="auto" :src="slide" alt="slide" />
+        <NuxtImg :src="slide" alt="slide" />
       </SwiperSlide>
     </Swiper>
   </div>

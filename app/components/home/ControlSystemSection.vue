@@ -31,7 +31,7 @@ const props = defineProps({
         }" :modules="modules" class="mySwiper">
           <SwiperSlide class="Slides_slide" v-for="(image, index) in props.images" :key="index">
             <div class="control-system__image">
-              <NuxtImg format="auto" :src="image" :alt="`slide ${index + 1}`" preset="default" />
+              <NuxtImg :src="image" :alt="`slide ${index + 1}`" preset="default" />
             </div>
           </SwiperSlide>
         </Swiper>

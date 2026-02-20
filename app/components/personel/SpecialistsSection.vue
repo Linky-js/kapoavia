@@ -20,7 +20,7 @@
             предприятия.</div>
         </div>
         <div class="slider">
-          <NuxtImg format="auto" src="/images/personnel/1.png" alt="" />
+          <NuxtImg src="/images/personnel/1.png" alt="" />
         </div>
       </div>
 

@@ -7,7 +7,7 @@
       <div class="Base_content">
 
         <div class="slider">
-          <NuxtImg format="auto" src="/images/license/4.png" alt="" />
+          <NuxtImg src="/images/license/4.png" alt="" />
         </div>
         <div class="base__info">
           <div class="labelSection">

@@ -19,7 +19,7 @@
             контролирующими организациями.</div>
         </div>
         <div class="slider">
-          <NuxtImg format="auto" src="/images/license/5.png" alt="" />
+          <NuxtImg src="/images/license/5.png" alt="" />
         </div>
       </div>
     </div>

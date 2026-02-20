@@ -4,7 +4,7 @@
     <div class="container">
       <div class="quality__content">
         <div class="quality__image">
-          <NuxtImg format="auto" src="/images/quality/1.png" alt="quality" />
+          <NuxtImg src="/images/quality/1.png" alt="quality" />
         </div>
         <div class="quality__head">
           <div class="labelSection">

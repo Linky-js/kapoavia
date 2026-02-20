@@ -82,7 +82,7 @@ onMounted(() => {
             объекты, необходимые для организации рабочего процесса и обеспечения условий труда персонала.</div>
         </div>
         <div class="slider">
-          <NuxtImg format="auto" src="/images/personnel/3.png" alt="" />
+          <NuxtImg src="/images/personnel/3.png" alt="" />
         </div>
       </div>
 

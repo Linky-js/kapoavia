@@ -12,10 +12,10 @@ import mainImg from '/images/home/1.png'
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Main_slide">
-        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
+        <NuxtImg :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
       <SwiperSlide class="Main_slide">
-        <NuxtImg format="auto" :src="mainImg" alt="slide" preset="default" />
+        <NuxtImg :src="mainImg" alt="slide" preset="default" />
       </SwiperSlide>
     </Swiper>
     <div class="container">

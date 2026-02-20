@@ -20,10 +20,10 @@ const mainTypes = [
       clickable: true
     }" :navigation="true" :modules="modules" class="mySwiper">
       <SwiperSlide class="Main_slide">
-        <NuxtImg format="auto" :src="'/images/home/1.png'" alt="slide" preset="default" />
+        <NuxtImg :src="'/images/home/1.png'" alt="slide" preset="default" />
       </SwiperSlide>
       <SwiperSlide class="Main_slide">
-        <NuxtImg format="auto" :src="'/images/home/1.png'" alt="slide" preset="default" />
+        <NuxtImg :src="'/images/home/1.png'" alt="slide" preset="default" />
       </SwiperSlide>
     </Swiper>
 

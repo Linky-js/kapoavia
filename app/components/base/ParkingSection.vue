@@ -17,7 +17,7 @@
           </p>
         </div>
         <div class="Parking__image">
-          <NuxtImg format="auto" src="/images/parking.png" alt="Parking" preset="default" />
+          <NuxtImg src="/images/parking.png" alt="Parking" preset="default" />
         </div>
       </div>
     </div>

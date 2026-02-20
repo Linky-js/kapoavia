@@ -28,7 +28,7 @@ const props = defineProps({
         <div class="production__items">
           <div class="production__item" v-for="(item, index) in production" :key="index">
             <div class="production__image">
-              <NuxtImg format="auto" :src="item.image" alt="production" preset="default" />
+              <NuxtImg :src="item.image" alt="production" preset="default" />
             </div>
             <div class="production__item-info">
               <h3 class="head-h3" v-html="item.title"></h3>
